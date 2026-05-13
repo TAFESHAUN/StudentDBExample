@@ -6,7 +6,14 @@
         xmlns:local="clr-namespace:StudentDBExample"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-
-    </Grid>
+    <StackPanel>
+        <TextBlock x:Name="dataModel"
+            Text="Student Manger Demo App"
+            />
+        <DataGrid x:Name="studentDg"
+                  AutoGenerateColumns="True"
+                  IsReadOnly="True"
+                  Height="300"
+            />
+    </StackPanel>
 </Window>
